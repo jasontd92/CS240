@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jasontd.rescuepro405.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/logo_blue"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:text="Click on an employee to see more details"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="80dp">
+        <TableRow
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:text="Employee"
+                android:textSize="30dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textSize="30dp"
+                android:textColor="@color/black"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="30dp"
+            android:onClick="showInfo">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_visibility_black_24dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="John Doe"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:background="@drawable/circle" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" OK"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="30dp"
+            android:onClick="showInfo">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_visibility_black_24dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Jane Smith"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:background="@drawable/warningcircle" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Warning"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="30dp"
+            android:onClick="showInfo">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_visibility_black_24dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Jack Murdoch"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:background="@drawable/dangercircle" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Danger"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="30dp"
+            android:onClick="showInfo">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_visibility_black_24dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Mike Stevens"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:background="@drawable/circle" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" OK"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

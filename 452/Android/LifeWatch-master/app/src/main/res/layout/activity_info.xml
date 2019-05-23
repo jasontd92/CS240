@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jasontd.rescuepro405.InfoActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/logo_blue"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="100dp"
+        android:paddingLeft="80dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:textColor="@color/black"
+                android:id="@+id/name"
+                android:textSize="30dp"
+                android:layout_marginRight="40dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnColor"
+                android:background="@drawable/bigcircle"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:text="Status: OK"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/status"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:id="@+id/vehicle"
+            android:text="Vehicle: Ford"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:id="@+id/timeofaccident"
+            android:text="Time of Accident: N/A"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:id="@+id/location"
+            android:text="Location: Boise, ID"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:id="@+id/speedofimpact"
+            android:text="Speed of Impact: N/A"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_rounded_red"
+            android:text="REQUEST EMS TO SCENE"
+            android:id="@+id/emergency_button"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:text="Call John"
+            android:background="@drawable/btn_rounded_call"
+            android:id="@+id/callbutton"/>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
